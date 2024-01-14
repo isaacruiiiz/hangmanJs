@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Margarine', sans-serif;
+    background-image: url('../images/background.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    padding: 0; 
+    height: 100vh;
+}
+
+@-webkit-keyframes scale {
+    0%   { transform: scale(1,1) translateY(0%); }
+    100% { transform: scale(0.2,0.2) translateY(-90%); }
+}
+
+@-moz-keyframes scale {
+    0%   { transform: scale(1,1) translateY(0%); }
+    100% { transform: scale(0.2,0.2) translateY(-90%); }
+}
+
+@-o-keyframes scale {
+    0%   { transform: scale(1,1) translateY(0%); }
+    100% { transform: scale(0.2,0.2) translateY(-90%); }
+}
+
+@keyframes scale {
+    0%   { transform: scale(1,1) translateY(0%); }
+    100% { transform: scale(0.2,0.2) translateY(-90%); }
+}
+
+.mainTitle {
+    position: relative;
+    font-size: 150px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    top: -5%;
+
+    animation-name: scale;
+    animation-duration: 4s; 
+    animation-fill-mode: forwards; 
+    animation-delay: 1s;
+}
+
+.introduceUsername {
+    position: relative;
+    font-size: 50px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    top: -10%;
+}
+
+.usernameIdent {
+    text-align: center;
+    top: -20%;
+    position: relative;
+}
+
+#usernameInput {
+    font-family: 'Margarine', sans-serif;
+    width: 200px;
+    height: 40px;
+    padding: 15px;
+    background: transparent;
+    border: 5px solid rgba(255,255,255,.8);
+    border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+    font-size: 50px;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#usernameInput:focus {
+    outline: none;
+}
+
+#usernameConfirm {
+    font-family: 'Margarine', sans-serif;
+    padding: 15px;
+    background: transparent;
+    border: 5px solid rgba(255,255,255,.8);
+    border-image: url("https://www.unicefusa.org/sites/default/files/answer-box.png") 20;
+    color: white;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.playZone {
+    font-family: 'Margarine', sans-serif;
+    color: white;
+    opacity: 0.8;
+    font-size: 50px;
+    width: 916px;
+    height: 400px;
+    top: -30%;
+    left: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.playZone p {
+    margin-right: 40px;
+}
+
+.hangmanImage {
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    background-image: url(../images/hangmanImage.png);
+    position: relative;
+}
+
